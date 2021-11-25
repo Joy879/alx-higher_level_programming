@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 def best_score(a_dictionary):
-    if not a_dictionary:
+    none_dict = None
+    empty_dict = {}
+    if a_dictionary == none_dict:
         return None
-    key = ""
-    max = 0
-    for i in a_dictionary:
-        if int(a_dictionary[i]) > max:
-            max = int(a_dictionary[i])
-            key = i
+    elif a_dictionary == empty_dict:
+        return None
+    best = max(a_dictionary, key= a_dictionary.get)
+    return best
