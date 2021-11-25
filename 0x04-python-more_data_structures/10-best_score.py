@@ -6,5 +6,5 @@ def best_score(a_dictionary):
         return None
     elif a_dictionary == empty_dict:
         return None
-    best = max(a_dictionary, key= a_dictionary.get)
+    best = max(a_dictionary, key=a_dictionary.get)
     return best
