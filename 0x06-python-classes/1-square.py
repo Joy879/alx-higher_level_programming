@@ -3,8 +3,10 @@
 """
 
 class Square:
-"”" Defining the class Square """
+""" Defining the class Square 
+"""
 
     def __init__(self, size):
-""" Initializing attribute size"""
+""" Initializing attribute size
+"""
         self.__size = size
