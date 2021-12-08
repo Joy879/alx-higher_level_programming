@@ -2,5 +2,6 @@
 """ Code that defines an empty class
 """
 class Square:
-    """ Defining an empty class"""
+    """ Defining an empty class
+    """
     pass
