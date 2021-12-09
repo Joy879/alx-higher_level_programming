@@ -2,10 +2,10 @@
 """ Defining a class Square with a private attribute size
 """
 
-class Square:
-    """ Defining the class Square 
-    """
 
+class Square:
+    """ Defining the class Square
+"""
     def __init__(self, size):
         """ Initializing attribute size
         __init__ method initializes the instance

@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """Defining a class Node
 """
+
+
 class Node:
     """Creates class named Node
     """
