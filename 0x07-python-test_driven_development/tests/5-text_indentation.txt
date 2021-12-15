@@ -1,0 +1,63 @@
+# 5-text_indentation.txt
+
+``text_indentation()`` adds indenation after characters
+
+::
+
+Test Types
+
+    >>> text_indentation = __import__("5-text_indentation").text_indentation
+    >>> text_indentation(1234)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+    >>> text_indentation(1.5)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+    >>> text_indentation(None)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+    >>> text_indentation("abc?cde")
+    abc?
+    <BLANKLINE>
+    cde
+
+    >>> text_indentation("   abc?cde")
+    abc?
+    <BLANKLINE>
+    cde
+
+    >>> text_indentation("abc?cde")
+    abc?
+    <BLANKLINE>
+    cde
+
+    >>> text_indentation("abc?  cde")
+    abc?
+    <BLANKLINE>
+    cde
+
+    >>> text_indentation("abc  ?cde")
+    abc?
+    <BLANKLINE>
+    cde
+
+    >>> text_indentation("abc.:?cde")
+    abc.
+    <BLANKLINE>
+    :
+    <BLANKLINE>
+    ?
+    <BLANKLINE>
+    cde
+
+    >>> text_indentation("abc  .   :   ?   cde")
+    abc.
+    <BLANKLINE>
+    :
+    <BLANKLINE>
+    ?
+    <BLANKLINE>
+    cde

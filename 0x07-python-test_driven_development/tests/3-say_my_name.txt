@@ -1,0 +1,35 @@
+# 3-say_my_name.txt
+
+``say_my_name()`` prints a persons name
+
+::
+
+Test Types
+
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+    >>> say_my_name(123)
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+    >>> say_my_name(None)
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+    >>> say_my_name("Joy", 1234)
+    Traceback (most recent call last):
+    TypeError: last_name must be a string
+
+    >>> say_my_name("Joy", None)
+    Traceback (most recent call last):
+    TypeError: last_name must be a string
+
+Test values
+
+    >>> say_my_name("Joy")
+    My name is Joy
+
+    >>> say_my_name("Joy", "W")
+    My name is Joy W
+
+    >>> say_my_name("")
+    My name is 
