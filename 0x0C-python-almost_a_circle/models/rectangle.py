@@ -49,12 +49,14 @@ class Rectangle(Base):
         self.__height = height
         self.__x = x
         self.__y = y
-    @property
+
+        @property
     def width(self):
         """
         Getter method for attribute width
         """
         return self.__width
+
     @width.setter
     def width(self, value):
         """
@@ -65,12 +67,14 @@ class Rectangle(Base):
         if value <= 0:
             raise ValueError("width must be > 0")
         self.__width = value
-    @property
+
+        @property
     def height(self):
         """
         Getter method for height attr
         """
         return self.__height
+
     @height.setter
     def height(self, value):
         """
@@ -88,6 +92,7 @@ class Rectangle(Base):
         Getter method for size attr
         """
         return self.__x
+
     @x.setter
     def x(self, value):
         """
@@ -98,12 +103,14 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("x must be >= 0")
         self.__x = value
-    @property
+
+        @property
     def y(self):
         """
         Getter method for y attr
         """
         return self.__y
+
     @y.setter
     def y(self, value):
         """
@@ -128,6 +135,7 @@ class Rectangle(Base):
         for i in range(self.__height):
             print("#" * self.__width)
         print()
+
     def __str__(self):
         """
         Returns a string format of the rectangle
@@ -135,6 +143,7 @@ class Rectangle(Base):
         return ("[{}] ({}) {}/{} - {}/{}".format(self.__class__.__name__,
                                                  self.id, self.__x, self.__y,
                                                  self.__width, self.__height))
+
     def display(self):
         """
         Prints in stdout the Rectangle instance with the character by taking
