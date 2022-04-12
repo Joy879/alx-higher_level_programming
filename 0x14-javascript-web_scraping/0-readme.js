@@ -1,4 +1,5 @@
 #!/usr/bin/node
+
 let filePath = process.argv[2];
 
 let fs = require('fs');
